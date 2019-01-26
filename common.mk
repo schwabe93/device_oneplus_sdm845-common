@@ -108,6 +108,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.qcom:64
 
+#QTI performance
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
