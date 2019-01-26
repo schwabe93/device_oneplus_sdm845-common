@@ -93,6 +93,19 @@ lib64/vendor.qti.hardware.iop@1.0.so|3fb2a359a1f9ef6544538aa9d70391f4e5da3972
 lib64/vendor.qti.hardware.iop@2.0.so|efc50e3f5649ee2e921a4f21c8227a43bb4ca0dd
 lib64/vendor.qti.hardware.perf@1.0.so|978a16bc6f27967f6345c5b51386d50768553ab5
 
+# NXP NFC
+-app/NxpNfcNci/NxpNfcNci.apk|698ff1fab2a6e9843310713763533ed11d39f47e
+-app/NxpSecureElement/NxpSecureElement.apk
+framework/com.nxp.nfc.jar
+etc/permissions/com.nxp.nfc.xml
+lib64/android.hardware.secure_element@1.0.so
+lib64/ese_spi_nxp.so
+lib64/libnxpnfc_nci_jni.so
+lib64/libnxpnfc-nci.so
+lib64/vendor.nxp.nxpnfc@1.0.so
+lib64/vendor.nxp.nxpese@1.0.so
+etc/nfcee_access.xml
+
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
