@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "markakash/vendor_oneplus",
+    "target_path": "vendor/oneplus",
+    "branch": "pie",
+    "remote": "github"
+  },
+  {
+    "repository": "0ctobot/fajita-staging",
+    "target_path": "kernel/oneplus/sdm845",
+    "revision": "neutrino-msm-fajita-4.9",
+    "remote": "github"
+  }
+]
