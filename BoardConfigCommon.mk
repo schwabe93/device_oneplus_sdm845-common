@@ -20,6 +20,8 @@ COMMON_PATH := device/oneplus/sdm845-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
+OVERRIDE_QCOM_HARDWARE_VARIANT := sdm845
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -51,10 +53,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
-# Clang
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 9.0.1
-
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
@@ -68,9 +66,6 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Treble
 BOARD_VNDK_VERSION := current
-
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
@@ -139,4 +134,4 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # Inherit from the proprietary version
--include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
+-include vendor/oneplus/oneplus6/BoardConfigVendor.mk
