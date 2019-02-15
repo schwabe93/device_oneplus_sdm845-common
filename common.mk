@@ -15,12 +15,12 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
+$(call inherit-product, vendor/oneplus/oneplus6/sdm845-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay-pa
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
@@ -42,10 +42,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 PRODUCT_PACKAGES += \
     otapreopt_script
-
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -116,12 +112,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # tri-state-key
 PRODUCT_PACKAGES += \
-    KeyHandler \
     tri-state-key_daemon
 
 # Update engine
